@@ -1,0 +1,98 @@
+/* THEME : Hiroshy Presentation v1.0 */
+
+
+/* LINKS */
+.enlaces:hover{
+    text-decoration: none;
+}
+.link__social{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: #ffff;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.link__social--item{
+    /* padding: 0px 5px; */
+    flex: 1;
+}
+.talentos{
+    font-style: italic;
+}
+.circle__code{
+    background: #333;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#007741,#00C3E1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 6em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.content_circle:hover{
+    background: linear-gradient(#00C3E1,#007741);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.code{
+    font-family: 'Bungee', cursive;
+}
+
+/* Swipper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.company{
+    filter: grayscale(100%);
+    transition: .5;
+}
+.company:hover{
+    filter: grayscale(0%);
+}
+
+/* media screen  */
+@media screen and (max-width:500px){
+    .circle__code{
+        margin: 0 auto;
+    }
+}
