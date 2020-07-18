@@ -90,6 +90,16 @@
     filter: grayscale(0%);
 }
 
+.relative{
+    position: relative;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+}
+.superposition{
+    z-index: 9999999;
+}
 /* media screen  */
 @media screen and (max-width:500px){
     .circle__code{
