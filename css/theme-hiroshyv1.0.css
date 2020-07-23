@@ -1,98 +1,227 @@
 /* THEME : Hiroshy Presentation v1.0 */
 
+:root {
+    --swiper-theme-color: linear-gradient(#007741,#00C3E1);
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* Fondo */
+.bg-dark-hard{
+    background-color: #000;
+}
+.bg-main{
+    background: url(../img/wallpapers/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main2{
+    background: url(../img/wallpapers/main2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.mario-enviroment{
+    
+    background-repeat: repeat-x;
+    background-size: initial;
+    background-position: top;
+}
+.comelon{
+    width: 200px;
+    height: 200px;
+    background: url(../img/wallpapers/comelon.gif);
+    background-size: 150%;
+    background-position: center;
+    position: absolute;
+    left: 40%;
+    top: -268%;
+}
+.relative{
+    position: relative;
+}
+/* Navbar opcional */
+.navbar_optional{
+    display: flex;
+    margin-right: 2em;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    top: 50%;
+    position: fixed;
+    list-style: none;
+    z-index: 99999999999999999;
+    padding: 0 0 0 2px;
+}
+.navbar_child{
+    margin: 10px 10px;
+}
+.navbar_link{
+    
+}
 
 /* LINKS */
+
+.enlaces{
+    display: flex;
+    height: 48px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-self: center;
+}
+.icono-enlaces{
+    align-items: center;
+    align-self: center;
+    margin-right: .8em;
+}
 .enlaces:hover{
     text-decoration: none;
 }
-.link__social{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    color: #ffff;
-    list-style: none;
+.fullscreen{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin:0 auto;
+}
+.dflex{
     display: flex;
-    flex: 1;
-    font-weight: bold;
+}
+.flex-column{
+    flex-direction: column;
+}
+.alinear-todo-centro{
     justify-content: center;
+    align-self: center;
     align-items: center;
 }
-.link__social--item{
-    /* padding: 0px 5px; */
-    flex: 1;
-}
-.talentos{
-    font-style: italic;
-}
-.circle__code{
-    background: #333;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-turq{
+    color: #009D91;
 }
 .content_circle{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Press Start 2P', cursive;
     background: linear-gradient(#007741,#00C3E1);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
     color: transparent;
-    font-size: 6em;
     font-weight: bold;
-    transition: 0.5s;
+    transition: all .3s ease-in;
 }
 .content_circle:hover{
     background: linear-gradient(#00C3E1,#007741);
     -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
     color: transparent;
-    transition: 0.5s;
+    border-bottom: 2px solid #00C3E1;
 }
 
+.box{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 .code{
-    font-family: 'Bungee', cursive;
+    font-family: 'Press Start 2P', cursive;
+    float: left;
+    height: 48px;
+    position: relative;
+    animation: maquina 4s infinite alternate steps(20);
+    white-space: nowrap;
+    overflow: hidden;
+    background: linear-gradient(#00C3E1,#007741);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all .3s ease-in;
+}
+.code:hover{
+    background: linear-gradient(#007741,#00C3E1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    border-radius: .1em;
+}
+
+h1 .code span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background:#f8f9fa;
+    border-left: 1px solid #000;
+}
+.enviroment_mario{
+    width: 100%;
+    overflow: hidden;
+}
+.mario{
+    position: absolute;
+    left: -15%;
+    transition: all .2s ease-in;
+    animation: mario_corre 4s infinite ease-in-out;
 }
 
 /* Swipper */
 .swiper-container {
     width: 100%;
-    height: 100%;
-  }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+}
+/* Estilos para imagenes */
 .company{
     filter: grayscale(100%);
-    transition: .5;
+    transition: all .2s ease-in;
 }
 .company:hover{
     filter: grayscale(0%);
 }
 
-/* media screen  */
+/* mediaquery screen  */
+@media screen and (max-width:1024px){
+    .comelon{
+        left: 50%;
+    }
+}
 @media screen and (max-width:500px){
     .circle__code{
         margin: 0 auto;
+    }
+    .ddesktop{
+        display: none;
+    }
+}
+/* Keyframes */
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 3%;
+    }
+}
+@keyframes mario_corre{
+    from{
+        left: -10%;
+    }
+    to{
+        left: 100%;
     }
 }

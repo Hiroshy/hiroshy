@@ -7,159 +7,186 @@
     <!-- https://github.com/Hiroshy/hiroshy.git -->
     <!-- agrego boostrapp -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/theme-hiroshyv1.0.css">
     <!-- tipo de letra -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
+    <link rel="stylesheet" href="css/theme-hiroshyv1.0.css">
+    <!-- Protocolos Open Graph -->
+    <meta property="og:title" content="Hiroshy :: Web Develpoment Full Stack">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hiroshy.github.io/hiroshy/">
+    <meta property="og:image" content="https://ed.teamhttps://drupal.ed.team/sites/default/files/inline-images/EDteam-card.jpg">
+    </head>
 <body>
     <main>
         <nav class="bg-dark container-fluid">
-            <div class="row py-3">
-                <div class="col-6">
-                    <a href="tel:5620222283" class="alert-link text-light enlaces">Llámame ahora !</a>
-                </div>
-                <div class="col-6 text-right">
-                    <ul class="link__social">
-                        <li class="link__social--item">
-                            <a href="#" class="alert-link text-light enlaces"><i class="fab fa-facebook icono_size"></i></a>
-                        </li>
-                        <li class="link__social--item">
-                            <a href="#" class="alert-link text-light enlaces"><i class="fab fa-whatsapp icono_size"></i></a>
-                        </li>
-                        <li class="link__social--item">
-                            <a href="#" class="alert-link text-light enlaces"><i class="far fa-envelope-open icono_size"></i></a>
-                        </li>
-                    </ul>
-                </div>
+            <div style="display: flex;flex: 1;flex-grow: 1;justify-content: center;">
+                    <a href="mailto:diaz201819@gmail.com" class="alert-link text-light enlaces">
+                        <span class="text-turq fa-2x icono-enlaces"> <i class="fas fa-inbox"></i> </span> <span class="ddesktop align-self-center">Contacto (2)</span>
+                    </a>
+                    <a href="tel:5620222283" class="alert-link text-light enlaces">
+                        <span class="text-turq fa-2x icono-enlaces"> <i class="fas fa-phone-alt"></i> </span> <span class="ddesktop align-self-center">Contacto</span>
+                    </a>
+                    <a href="mailto:diaz201819@gmail.com" class="alert-link text-light enlaces">
+                        <span class="text-turq fa-2x icono-enlaces"> <i class="fab fa-facebook"></i> </span> <span class="ddesktop align-self-center">Sigueme</span>
+                    </a>
+                    <a href="mailto:diaz201819@gmail.com" class="alert-link text-light enlaces">
+                        <span class="text-turq fa-2x icono-enlaces"> <i class="fab fa-whatsapp"></i> </span> <span class="ddesktop align-self-center">Escribeme</span>
+                    </a>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">HIROSHY</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Mi Historia <span class="sr-only">(current)</span></a>
+        <nav>
+            <ul class="navbar_optional">
+                <li class="navbar_child">
+                    <a href="#" class="navbar_link" data-toggle="tooltip" data-placement="top" title="Inicio">
+                        <i class="fas fa-circle-notch fa-2x"></i>
+                    </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Trabajos</a>
+                <li class="navbar_child">
+                    <a href="#sobre_mi" class="navbar_link" data-toggle="tooltip" data-placement="top" title="Sobre mi">
+                        <i class="fas fa-circle-notch fa-2x"></i>
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Mis 
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                <li class="navbar_child">
+                    <a href="#proyectos" class="navbar_link" data-toggle="tooltip" data-placement="top" title="Proyectos">
+                        <i class="fas fa-circle-notch fa-2x"></i>
+                    </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li class="navbar_child">
+                    <a href="#" class="navbar_link" data-toggle="tooltip" data-placement="top" title="Contacto">
+                        <i class="fas fa-circle-notch fa-2x"></i>
+                    </a>
                 </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
+            </ul>
         </nav>
         <aside>
-            <div class="container-fluid bg-light text-center py-5">
-                <h1>Web Develpoment Full Stack</h1>
-                <h4 class="talentos">HTML5,PHP7,CSS3,JS + ECMS6,SEO,LAMP</h4>
-            </div>
-            <div id="historia" class="container py-4">
-                <div class="row">
-                    <div class="form-group col-12 text-center">
-                        <span class="h1">Mi Historia</span>   
-                    </div>
-                    <div class="col-md-6  align-items-center">
-                        <p class="lead">
-                            Desarrollador Web Peruano con residencia permanente en mi querido México. Domino tecnologías como HTML5, CSS3 ,
-                            Javascript con su estandar ECMA SCRIPT 6, SEO, Google Analytics, Google Tag Manager, PHP7, Apache, LAMP.
-                        </p>
-                        <p class="lead">
-                            Autodidata y con muchas ganas de crecer profesionalmente, Puntual , Respetuoso y muy trabajador.
-                        </p>
-                    </div>
-                    <div align="center" class="col-md-6 text-center  align-items-center">
-                        <div class="circle__code">
-                            <div class="content_circle">
-                                <span class="code">{X}</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container-fluid bg-main fullscreen text-center dflex alinear-todo-centro">
+                <div class="box">
+                    <h1> 
+                        <span class="code" class="backround:green;">
+                            >_ Developer Full Stack<span>&#160;</span> 
+                        </span>
+                    </h1>
                 </div>
             </div>
-            <div id="proyectos" class="container pb-4">
-                <h1>Mis Proyectos</h1>
+            <div class="container-fluid bg-dark-hard py-3"></div>  
+
+            <div id="sobre_mi" class="container-fluid py-4 fullscreen dflex alinear-todo-centro relative mario-enviroment">
+                <div class="container align-items-center">
+                    <div class="form-group text-left relative">
+                        <span class="h1 content_circle code2">#> Sobre mi&nbsp;</span>   
+                        <div class="comelon"></div>
+                    </div>
+                    <p class="lead">
+                        Desarrollador Web Peruano con residencia permanente en mi querido México. Domino tecnologías como HTML5, CSS3 ,
+                        Javascript con su estandar ECMA SCRIPT 6, SEO, Google Analytics, Google Tag Manager, PHP7, Apache, LAMP.
+                    </p>
+                    <p class="lead">
+                        Autodidata y con muchas ganas de crecer profesionalmente, Puntual , Respetuoso y muy trabajador.
+                    </p>
+                    <div class="enviroment_mario">
+                        <img src="img/wallpapers/mario.gif" class="img-fluid mario" alt="mario" width="200">
+                    </div>
+                </div>
+                <!-- <div align="center" class="col-md-6 text-center  align-items-center">
+                    <div class="circle__code">
+                        <div class="content_circle">
+                            <span class="code">{X}</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div id="proyectos" class="container pb-4 text-center container fullscreen dflex alinear-todo-centro pb-4 text-center flex-column">
+                <div class="form-group text-right pb-4">
+                    <span class="h1 content_circle code2">#> Proyectos&nbsp;</span>   
+                </div>
                 <!-- Swiper -->
                 <div class="swiper-container py-2">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/ed_online.jpg" class="card-img-top company" alt="html">
-                            <div class="card-body">
-                              <a href="">
-                                <h5 class="card-title">ED OnLine</h5>
-                              </a>
-                            </div>
+                            <a href="" data-toggle="tooltip" data-placement="top" title="ED OnLine" target="_blank">
+                                <img src="img/proyectos/ed_online.jpg" class="card-img-top company" alt="ED OnLine">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/messebau.jpg" class="card-img-top company" alt="LAMP">
-                            <div class="card-body">
-                                <a href="">
-                                    <h5 class="card-title">Cotizador Messebau®</h5>
-                                </a>
-                            </div>
+                            <a a href="https://hiroshy.github.io/mym/" target="_blank" data-toggle="tooltip" data-placement="top" title="M&M Inmobiliaria" target="_blank">
+                                <img src="img/proyectos/mym.jpg" class="card-img-top company" alt="M&M">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/usa_shoes.png" class="card-img-top company" alt="LAMP">
-                            <div class="card-body">
-                                <a href="https://usashoesonline.com.mx/descargar-catalogo/">
-                                    <h5 class="card-title">USA SHOES | LOCALIZADOR</h5>
-                                </a>
-                            </div>
+                            <a href="https://agmgrupo.com.mx/landing/" data-toggle="tooltip" data-placement="top" title="AGM Grupo Inmobiliario" target="_blank">
+                                <img src="img/proyectos/agm.png" class="card-img-top company" alt="AGM">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/usa_shoes.png" class="card-img-top company" alt="LAMP">
-                            <div class="card-body">
-                                <a href="https://usashoesonline.com.mx/descargar-catalogo/">
-                                    <h5 class="card-title">USA SHOES | CATÁLOGO</h5>
-                                </a>
-                            </div>
+                            <a href="https://www.licensingmexico.com/licensing/" data-toggle="tooltip" data-placement="top" title="Expo Licensing WTC" target="_blank">
+                                <img src="img/proyectos/expo-wtc.png" class="card-img-top company" alt="Expo Licensing WTC">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/freddo.png" class="card-img-top company" alt="LAMP">
-                            <div class="card-body">
-                                <a href="https://usashoesonline.com.mx/descargar-catalogo/">
-                                    <h5 class="card-title">FREDDO</h5>
-                                </a>
-                            </div>
+                            <a href="https://nespresso.ocs.com.mx/" data-toggle="tooltip" data-placement="top" title="Office Coffee Services (landing)" target="_blank">
+                                <img src="img/proyectos/nespresso.jpg" class="card-img-top company" alt="Office Coffee Services (landing)">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="img/proyectos/glasse.png" class="card-img-top company" alt="LAMP">
-                            <div class="card-body">
-                                <a href="https://usashoesonline.com.mx/descargar-catalogo/">
-                                    <h5 class="card-title">GLASSE</h5>
-                                </a>
-                            </div>
+                            <a href="https://www.inladsac.com/" data-toggle="tooltip" data-placement="top" title="Inlad sac" target="_blank">
+                                <img src="img/proyectos/inlad.jpg" class="card-img-top company" alt="inladsac">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://www.ciemsafoodservice.com/" data-toggle="tooltip" data-placement="top" title="Ciemsa México" target="_blank">
+                                <img src="img/proyectos/ciemsa.png" class="card-img-top company" alt="Ciemsa México">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://www.messebaulatam.com/cot/" data-toggle="tooltip" data-placement="top" title="Messebau®" target="_blank">
+                                <img src="img/proyectos/messebau.jpg" class="card-img-top company" alt="messebau">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://usashoesonline.com.mx/descargar-catalogo/" data-toggle="tooltip" data-placement="top" title="Localizador USA SHOES" target="_blank">
+                                <img src="img/proyectos/usa_shoes.png" class="card-img-top company" alt="usa_shoes">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://usashoesonline.com.mx/descargar-catalogo/" data-toggle="tooltip" data-placement="top" title="Catálogo USA SHOES" target="_blank">
+                                <img src="img/proyectos/usa_shoes.png" class="card-img-top company" alt="usa_shoes">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://freddo.com.mx/" data-toggle="tooltip" data-placement="top" title="FREDDO" target="_blank">
+                                <img src="img/proyectos/freddo.png" class="card-img-top company" alt="freddo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://glasse.com.mx/" data-toggle="tooltip" data-placement="top" title="GLASSE" target="_blank">
+                                <img src="img/proyectos/glasse.png" class="card-img-top company" alt="glasse">
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -167,10 +194,11 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div id="" class="container pb-4">
-                <div class="form-group">
-                    <h1></h1>
-                </div>
+
+            <div id="" class="container-fluid text-center bg-dark-hard py-3">
+                <span class="text-light muted">
+                    Copyright Hiroshy® <span id="year"></span>
+                </span>
             </div>
         </aside>
     </main>
@@ -179,27 +207,61 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        centeredSlides: false,
-        spaceBetween: 30,
-        grabCursor: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            },
-        autoplay: {
-            delay: 3500,
-        },
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        lazy: true
-        });
+        window.addEventListener("load",()=>{
+            if(screen.width<500){
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    autoplay: {
+                        delay: 3500,
+                    },
+                });
+            }else{
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    autoplay: {
+                        delay: 3500,
+                    },
+                });
+            }
+        })
+        let year=document.getElementById("year");
+        let fecha=new Date();
+        year.innerHTML=fecha.getFullYear();
     </script>
     <!-- JS de Bootstrapp -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 </html>
