@@ -194,26 +194,12 @@ h1 .code span{
     filter: grayscale(0%);
 }
 
-<<<<<<< HEAD
 /* mediaquery screen  */
 @media screen and (max-width:1024px){
     .comelon{
         left: 50%;
     }
 }
-=======
-.relative{
-    position: relative;
-}
-.fixed{
-    position: fixed;
-    width: 100%;
-}
-.superposition{
-    z-index: 9999999;
-}
-/* media screen  */
->>>>>>> f1a0ae6fabbf6e5ec2bfc0ddfd0a3c69c26ab608
 @media screen and (max-width:500px){
     .circle__code{
         margin: 0 auto;
