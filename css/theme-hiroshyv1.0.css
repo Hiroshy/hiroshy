@@ -100,6 +100,12 @@ html{
 .text-turq{
     color: #009D91;
 }
+.text-turq-2{
+    background: linear-gradient(#007741,#00C3E1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
+}
 .content_circle{
     font-family: 'Press Start 2P', cursive;
     background: linear-gradient(#007741,#00C3E1);
@@ -165,6 +171,7 @@ h1 .code span{
     overflow: hidden;
 }
 .mario{
+    width: 200px;
     position: absolute;
     left: -15%;
     transition: all .2s ease-in;
@@ -206,6 +213,21 @@ h1 .code span{
     }
     .ddesktop{
         display: none;
+    }
+    .h1, h1 {
+        font-size: 1rem;
+    }
+    .lead {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+    .comelon {
+        width: 100px;
+        height: 100px;
+        left: 70%;
+    }
+    .mario{
+        width: 100px;
     }
 }
 /* Keyframes */
