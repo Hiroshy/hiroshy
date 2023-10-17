@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^h1roshy\.000webhostapp\.com$
+RewriteRule ^(.*)$ https://h1roshy.000webhostapp.com/$1 [L,R=301]
